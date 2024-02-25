@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode" : false,
+    "allowUnusedLabels": false,
+    "baseUrl": "src",
+    "paths": {
+      "service/*": ["src/services/*"],
+      "config/*": ["src/config/*"],
+      "router/*": ["src/routers/*"],
+      "controller/*": ["src/controllers/*"],
+      "middleware/*": ["src/middlewares/*"],
+      "model/*": ["src/models/*"],
+      "common/*": ["src/common/*"],
+      "enum/*": ["src/enum/*"],
+      "regex/*": ["src/regex/*"],
+      "interface/*": ["src/interface/*"]
+    },
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "files": [
+    "custom.d.ts"
+  ],
+}
